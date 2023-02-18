@@ -703,7 +703,7 @@ color: #757575;
 }
 .user-subscribe-input:focus{
 outline: none;
-   
+border-color: var(--color-iris);
 }
 .user-subscribe-input::placeholder{
 color: rgba(255, 255, 255, 0.6);
