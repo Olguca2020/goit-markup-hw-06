@@ -261,7 +261,21 @@
                 <use href="./images/icons.svg/symbol-defs.svg#icon-linkedin"></use>
               </svg></a></li>
             </ul>
-      </div>      
+      </div> 
+      <div class="footer-form">
+        <strong class="footer-title">Subscribe</strong>
+        <form class="user-form-subscribe">
+          <label>
+          <input class="user-subscribe-input"
+           type="email"
+           name="user_subscribe_email"
+           placeholder="E-mail">          
+          </label>
+          <button type="submit" class="subscribe-btn">Subscribe <svg class="subscribe-icon" width="24" height="20">
+            <use href="./images/icons.svg/symbol-defs.svg#icon-plane"></use>
+          </svg></button>
+        </form>
+      </div>     
       </div>    
     </footer> 
     <div class="backdrop is-hidden" data-modal>
@@ -270,9 +284,64 @@
           <svg class="modal-ikon" width="8" height="8">
             <use href="./images/icons.svg/symbol-defs.svg#icon-symbol-defs"></use>
           </svg>
-        </button>
+        </button>        
+        <strong class="modal-title">Leave your contacts and we will call you back</strong>
+        <form class="modal-form"></form>
+        <!-- ===========Name field============= -->
+        <label class="modal-form-label" for="user_name">Name</label>
+          <div class="modal-form-group">
+          <input 
+             class="modal-form-input"
+             type="text"
+             id="user_name"
+             name="modal_form_name"
+             required
+             />
+          <svg class="modal-form-icon" width="18" height="18">
+            <use href="./images/icons.svg/symbol-defs.svg#icon-person-black-18dp-1"></use>
+          </svg>
+          </div>
+        <!-- ===========Phone field============= -->
+        <label class="modal-form-label" for="user_phone">Phone</label>
+          <div class="modal-form-group">
+          <input 
+             class="modal-form-input"
+             type="text"
+             id="user_phone"
+             name="modal_form_name"
+             required
+             />             
+          <svg class="modal-form-icon" width="18" height="18">
+            <use href="./images/icons.svg/symbol-defs.svg#icon-phone-black-18dp-1"></use>
+          </svg>
+          </div>
+        <!-- ===========Email field============= -->
+        <label class="modal-form-label" for="user_email">Email</label>
+          <div class="modal-form-group">
+          <input 
+             class="modal-form-input"
+             type="text"
+             id="user_email"
+             name="modal_form_name"
+             required
+             />
+          <svg class="modal-form-icon" width="18" height="18">
+            <use href="./images/icons.svg/symbol-defs.svg#icon-email-black-18dp-1"></use>
+          </svg>
+          </div>
+          <label class="modal-form-label" for="user_comment">Comment</label>
+          <textarea class="modal-form-comment" name="user_comment" id="user_comment" placeholder="Text input"></textarea>
+
+          <label class="modal-form-agreement" for="user_agreement">
+          <input class="modal-form-checkbox" type="checkbox" name="modal-form-policy" id="user_agreement">
+          <span class="modal-form-descr">I accept the terms and conditions of the <a class="agreement-link" href="" target="_blank">Privacy Policy</a></span> 
+          </label>
+
+          <button type="submit" class="modal-form-btn" disabled>Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
+inp
