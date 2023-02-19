@@ -704,6 +704,7 @@ color: #757575;
 .user-subscribe-input:focus{
 outline: none;
 border-color: var(--color-iris);
+transition: opacity var(--transition);
 }
 .user-subscribe-input:focus + .subscribe-label, 
 .user-subscribe-input:not(:placeholder-shown) + .subscribe-label
