@@ -373,8 +373,14 @@ body {
 .footer-container{
 display: flex;
 align-items: baseline;
-gap: 120px ;
 
+}
+.footer-left{
+   margin-right: 120px;
+}
+.right{
+   width: 208px;
+   margin-right: 80px;
 }
 .footer .sotial-link {
 background: rgba(255, 255, 255, 0.1);
@@ -688,6 +694,7 @@ color: #757575;
 }
 .agreement-link{
    text-decoration: underline;
+   color: var(--color-iris);
 }
 .modal-form-descr{
    user-select: none;
@@ -698,18 +705,19 @@ color: #757575;
    padding-left: 16px;
    padding-top: 8px;
    padding-bottom: 8px;
+   width: 264px;
    background-color: rgba(0, 0, 0, 0);
    color: var(--color-whit);
 }
 .user-subscribe-input:focus{
 outline: none;
 border-color: var(--color-iris);
-transition: opacity var(--transition);
+transition: transform var(--transition);
 }
 .user-subscribe-input:focus + .subscribe-label, 
 .user-subscribe-input:not(:placeholder-shown) + .subscribe-label
 {
-  opacity: 0;
+  transform: translate(-60px, -12px);
 }
 .user-form-subscribe{
 display: flex;
@@ -729,9 +737,11 @@ gap: 24px;
    align-items: center;
    padding: 8px 24px;
    gap: 16px;
+   width: 165px;
    background-color: var(--color-iris);
    color: var(--color-whit);
    border: 1px solid var(--color-iris) ;
+   border-radius: 4px;
    transition: background-color var(--transition);
 }
 .subscribe-icon{
