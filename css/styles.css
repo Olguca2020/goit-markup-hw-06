@@ -705,8 +705,10 @@ color: #757575;
 outline: none;
 border-color: var(--color-iris);
 }
-.user-subscribe-input::placeholder{
-color: rgba(255, 255, 255, 0.6);
+.user-subscribe-input:focus + .subscribe-label, 
+.user-subscribe-input:not(:placeholder-shown) + .subscribe-label
+{
+  opacity: 0;
 }
 .user-form-subscribe{
 display: flex;
@@ -738,4 +740,17 @@ gap: 24px;
 .subscribe-btn:hover
 {
    background-color: var(--color-ocean);
+}
+.subscribe-form{
+   position: relative;
+}
+.subscribe-label{
+   position: absolute;
+   top: 50%;
+   left: 16px;
+   transform: translateY(-50%);
+   font-weight: 400;
+   font-size: 12px;
+   line-height: calc(24/12);
+   color: rgba(255, 255, 255, 0.6);
 }
