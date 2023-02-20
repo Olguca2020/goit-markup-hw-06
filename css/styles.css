@@ -708,11 +708,12 @@ color: #757575;
    width: 264px;
    background-color: rgba(0, 0, 0, 0);
    color: var(--color-whit);
+   
 }
 .user-subscribe-input:focus{
 outline: none;
 border-color: var(--color-iris);
-transition: transform var(--transition);
+
 }
 .user-subscribe-input:focus + .subscribe-label, 
 .user-subscribe-input:not(:placeholder-shown) + .subscribe-label
@@ -764,4 +765,5 @@ gap: 24px;
    font-size: 12px;
    line-height: calc(24/12);
    color: rgba(255, 255, 255, 0.6);
+   transition: transform var(--transition);
 }
